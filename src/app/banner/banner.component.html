@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Section11</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
+  rel="stylesheet">
+ <link rel="stylesheet" href="./banner.component.scss" />
+ 
+</head>
+
+<body>
+  <header class="header " id="header_id">
+   <div class="inner-header ">
+    <button [routerLink]="['/home']">Get Properties</button><button [routerLink]="['/home']">Metro Cities</button><button [routerLink]="['/home']">Other Cities</button><button [routerLink]="['/buy']">Buy
+     Properties</button><button [routerLink]="['/sell']">Sell Properties</button><button [routerLink]="['/home']">Call</button><button
+     onclick="callFunc()">DropDown</button>
+    <div id="listDropdownId" class="list-dropdown">
+     <ul>
+      <li>Login</li>
+      <li>My Properties</li>
+      <li>Buy Properties</li>
+      <li ><a >Sell Properties</a></li>
+      <li>Interiors</li>
+      <li>Home Loan</li>
+      <li>Become a Partner</li>
+      <li>Legal Queries</li>
+      <li>Finance</li>
+      <li>Contact Us</li>
+     </ul>
+    </div>
+   </div>
+  </header>
+</body>
+
+</html>

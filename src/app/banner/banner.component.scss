@@ -1,0 +1,157 @@
+
+@mixin buttonStyle {
+    border: none;
+    //background-color: cornsilk;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    background: none;
+  }
+  
+  .active {
+    background-color: #f2f2f2 !important;
+    //max-height: 10vh;
+    .inner-header {
+      padding: 1rem !important;
+      button {
+        color: black !important;
+      }
+    }
+  }
+  
+  .container-self {
+    background-image: linear-gradient(rgba(0, 0, 0, 1.2), rgba(0, 0, 0, 0.2)),
+      url(../../images/real-estate-video-marketing-1920x1080-1-1024x576.jpg);
+    //background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .header {
+    top: 0%;
+    position: fixed;
+    width : 100%;
+    z-index: 100;
+    //background-color: #f2f2f2;
+  
+    .inner-header {
+      padding: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative;
+  
+      button {
+        @include buttonStyle();
+        color: aliceblue;
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      button:hover {
+        color: black;
+        background-color: #ffc63d;
+        transition-delay: 0.2s;
+        transition: ease-in-out 0.5s;
+      }
+  
+      .list-dropdown {
+        width: 12rem;
+        position: absolute;
+        right: 4%;
+        top: 70%;
+        visibility: hidden;
+        //line-height: 2rem;
+        //background-color: aliceblue;
+        //padding: 1rem;
+        //text-align: center;
+  
+        ul {
+          list-style: none;
+          background-color: white;
+          padding: 1rem;
+          line-height: 2rem;
+          text-align: center;
+        }
+        li {
+          padding: 0.5rem;
+          border-radius: 12px;
+        }
+        li:hover {
+          background-color: #ffc63d;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+ 
+  
+  .section-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    //border: 10px solid yellow;
+  
+    .title {
+      margin-top: 8rem;
+      font-size: 72px;
+      padding: 1rem;
+      letter-spacing: 10px;
+      font-weight: bolder;
+      font-family: montserrat;
+  
+      //width: 5rem;
+      //box-shadow: 10px 10px whitesmoke;
+      text-shadow: 1px 1px yellow;
+    }
+    .subtitle {
+      font-size: 25px;
+      letter-spacing: 1px;
+    }
+  }
+  
+  .main-email {
+    display: flex;
+    margin-top: 6rem;
+    box-shadow: inset -12px -8px 40px #fff;
+    input {
+      width: 25rem;
+      height: 3rem;
+      border: none;
+      background-color: #f2f2f2;
+    }
+    input::placeholder {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      width: 8rem;
+      background: none;
+      border: none;
+      background-color: #ffc63d;
+  
+      font-size: 20px;
+    }
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: aliceblue;
+    background-color: black;
+    .quick-link {
+      display: flex;
+      flex-direction: column;
+      //line-height: 10px;
+      align-items: center;
+      span {
+        font-size: 20px;
+        padding: 2rem;
+      }
+      div {
+        padding: 0.5rem;
+      }
+    }
+  }
+  

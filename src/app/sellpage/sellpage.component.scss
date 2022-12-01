@@ -1,0 +1,55 @@
+.form-outer {
+    display: flex;
+    justify-content: space-around;
+    //margin-top: 8vh;
+    background-image: linear-gradient(
+        to right,
+        rgba(254, 254, 254, -0.2) 0%,
+        rgba(0, 0, 0, 0.9) 0%
+      ),
+      url(../../images/purva-venezia-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10vh;
+    .form-first-inner {
+      color: white;
+    }
+  
+    .form-second-inner {
+      padding: 8vh;
+      width: 60%;
+      // border: 2px solid yellow;
+      backdrop-filter: blur(2.5px);
+      //box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      background-color: transparent;
+      color: white;
+  
+      .input-field {
+        min-height: 15vh;
+        color: white;
+        input {
+          background: none;
+          color: white;
+        }
+        button {
+          border: none;
+          background-color: white;
+          padding: 0.5rem 4rem;
+          border-radius: 12px;
+          position: absolute;
+          left: 300px;
+          top: 680px;
+        }
+        button:hover {
+          background-color: #198754;
+          transition-duration: 0.5s;
+        }
+      }
+    }
+  }
+  
+  textarea {
+    background: none !important;
+  }
+  
