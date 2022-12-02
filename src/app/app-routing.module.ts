@@ -5,10 +5,10 @@ import { HomeComponent } from './home/home.component';
 import { BuypageComponent } from './buypage/buypage.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
   {path:'sell',component:SellpageComponent},
   {path:'home',component:HomeComponent},
-  {path:'buy',component:BuypageComponent}
+  {path:'buy',component:BuypageComponent},
+  {path:'',redirectTo:'home', component:HomeComponent,pathMatch:'full'},
 ];
 
 @NgModule({
